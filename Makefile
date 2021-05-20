@@ -5,7 +5,7 @@
 #---------------------------------------------------------------------------------
 
 ifeq ($(strip $(PSL1GHT)),)
-$(error "Please set PSL1GHT in your environment. export PSL1GHT=<path>")
+	$(error "Please set PSL1GHT in your environment. export PSL1GHT=<path>")
 endif
 
 include	$(PSL1GHT)/ppu_rules
@@ -38,7 +38,7 @@ BUILD_WHATEVER 			   :=  $(BUILD)/*.*
 SOURCE		   			   :=  src
 INCLUDE		   			   :=  $(SOURCE)/include
 LIBS		   			   :=  dbglogger
-PCFLAGS                    :=  -O3 -Wall -Wextra -Werror -std=gnu17
+PCFLAGS                    :=  -O3 -Wall -Wextra -Werror -std=gnu11
 CFLAGS		               +=  -O3 -Wall -Wextra -Werror -mcpu=cell -mtune=cell -mgen-cell-microcode -mbig-endian -std=gnu11 -DPOWERPC64_PS3_ELF $(INCLUDES) # -mpowerpc64
 LD			               :=  ppu-ld
 USR_INCLUDE_BIT_CONVERTER  :=  usr/include/bitconverter
