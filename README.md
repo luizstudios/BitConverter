@@ -1,26 +1,14 @@
 # BitConverter
-This is C++ utility to handle bit and byte sequence. <br>
+**This repository is a fork of [this](https://github.com/sinban04/BitConverter) repository, this repository contains improvements and multi-platform support over the original library.**
 
-### Bit Converter
-It provides conversion between byte array and
-c++ datatypes. <br>
-In addition, It provides conversion between std::bitset and byte array. <br>
-<br>
-The motive of this Bit Converter was the absence of bit converter in C++ like BitConverter, BitArray class in C#. <br>
-So, it refers to C# classes, and tries to make the code independent of the platform. (e.g., Endianness)<br>
-<br>
+This is C++ utility to handle bit and byte sequence.
 
-### MemoryStream
+It provides conversion between byte array and C++ datatypes.
+In addition, It provides conversion between `std::bitset` and byte array.
 
-
-## Prerequisite
-cmake, automake, gcc
+The motive of this Bit Converter was the absence of bit converter in C++ like BitConverter, BitArray class in C#.
+So, it refers to C# classes, and tries to make the code independent of the platform. (e.g., Endianness)
 
 ## Build
 
-Command below would make build/ directory.
-```
-$ ./compile.sh            // compile
-$ ./build/bitConverter    // execute
-```
-
+Coming soon.
